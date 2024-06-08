@@ -15,11 +15,16 @@
  */
 package com.example.affirmations.data
 
+/*
+* The Affirmation class is stored in the affirmations/model folder
+* This file is stored in the data folder instead but accesses the Affirmation class through that import
+* Then we return the affirmation list whenever the main file calls Datasource.loadAffirmations()
+* */
 import com.example.affirmations.R
 import com.example.affirmations.model.Affirmation
 
 /**
- * [Datasource] generates a list of [Affirmation]
+ * [Datasource] generates a list of [Affirmation]V--
  */
 class Datasource() {
     fun loadAffirmations(): List<Affirmation> {
